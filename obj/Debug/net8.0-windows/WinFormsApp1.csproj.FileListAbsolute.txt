@@ -1,0 +1,17 @@
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AboutForm.resources
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.MainForm.resources
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
