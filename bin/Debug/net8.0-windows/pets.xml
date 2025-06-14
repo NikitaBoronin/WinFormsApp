@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Pet>
-    <Name>rt</Name>
-    <Gender>Самец</Gender>
+    <Name>ssds</Name>
+    <Gender>Самка</Gender>
     <Characteristics>
-      <string>Агрессивный</string>
       <string>Спит днем</string>
     </Characteristics>
-    <Type>Собака</Type>
-    <DateOfBirth>2025-06-13T23:34:21.4482761+03:00</DateOfBirth>
-    <Health>23</Health>
-    <ImagePath>C:\Users\0\OneDrive\Изображения\Screenshots\sk1.png</ImagePath>
+    <Type>Кошка</Type>
+    <DateOfBirth>2025-06-12T08:41:32.355</DateOfBirth>
+    <Health>44</Health>
+    <ImagePath>C:\Users\0\OneDrive\Изображения\Screenshots\Снимок экрана 2025-04-13 174614.png</ImagePath>
   </Pet>
   <Pet>
-    <Name>sd</Name>
-    <Gender>Самка</Gender>
+    <Name>kkfkf</Name>
+    <Gender>Самец</Gender>
     <Characteristics>
       <string>Привит</string>
       <string>Спит днем</string>
     </Characteristics>
     <Type>Хомяк</Type>
-    <DateOfBirth>2025-06-13T23:34:33.1134376+03:00</DateOfBirth>
+    <DateOfBirth>2025-06-14T08:41:48.0047582+03:00</DateOfBirth>
+    <Health>82</Health>
+    <ImagePath>C:\Users\0\OneDrive\Изображения\Screenshots\PokerTable (2).png</ImagePath>
+  </Pet>
+  <Pet>
+    <Name>jfhd</Name>
+    <Gender>Самка</Gender>
+    <Characteristics>
+      <string>Привит</string>
+    </Characteristics>
+    <Type>Кошка</Type>
+    <DateOfBirth>2025-06-14T08:42:03.3062764+03:00</DateOfBirth>
     <Health>23</Health>
-    <ImagePath>C:\Users\0\OneDrive\Изображения\Screenshots\Снимок экрана 2025-04-29 094254.png</ImagePath>
+    <ImagePath>C:\Users\0\OneDrive\Изображения\Screenshots\Снимок экрана 2025-05-20 125352.png</ImagePath>
   </Pet>
 </ArrayOfPet>

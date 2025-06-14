@@ -39,7 +39,9 @@
             NameLabel = new Label();
             HealthprogressBar = new ProgressBar();
             BirthDateTimePicker = new DateTimePicker();
+            AnimalsDataGridView = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)AnimalPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AnimalsDataGridView).BeginInit();
             SuspendLayout();
             // 
             // PetsTreeView
@@ -136,11 +138,22 @@
             BirthDateTimePicker.Size = new Size(250, 27);
             BirthDateTimePicker.TabIndex = 15;
             // 
+            // AnimalsDataGridView
+            // 
+            AnimalsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            AnimalsDataGridView.Location = new Point(517, 214);
+            AnimalsDataGridView.Name = "AnimalsDataGridView";
+            AnimalsDataGridView.RowHeadersWidth = 51;
+            AnimalsDataGridView.Size = new Size(262, 144);
+            AnimalsDataGridView.TabIndex = 16;
+            AnimalsDataGridView.SelectionChanged += AnimalsDataGridView_SelectionChanged;
+            // 
             // AboutForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(AnimalsDataGridView);
             Controls.Add(BirthDateTimePicker);
             Controls.Add(HealthprogressBar);
             Controls.Add(HealthLabel);
@@ -155,6 +168,7 @@
             Name = "AboutForm";
             Text = "AboutForm";
             ((System.ComponentModel.ISupportInitialize)AnimalPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AnimalsDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -172,5 +186,6 @@
         private Label NameLabel;
         private ProgressBar HealthprogressBar;
         private DateTimePicker BirthDateTimePicker;
+        private DataGridView AnimalsDataGridView;
     }
 }

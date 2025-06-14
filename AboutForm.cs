@@ -27,6 +27,8 @@
                 PetsTreeView.Nodes.Add(node);
             }
 
+            AnimalsDataGridView.DataSource = null;
+            AnimalsDataGridView.DataSource = pets;
             //Pet pet = pets[0];
             //NameLabel.Text = $"Имя: {pet.Name}";
             //GenderLabel.Text = $"Пол: {pet.Gender}";
@@ -79,9 +81,59 @@
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ошибка загрузки изображения: " + ex.Message);
+                    MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
                 }
             }
+        }
+
+        private void AnimalsDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            if(AnimalsDataGridView.SelectedRows == null)
+            {
+                MessageBox.Show("Пустое!");
+                return;
+            }
+
+            var pet = AnimalsDataGridView.CurrentRow.DataBoundItem as Pet;
+            if (pet == null )
+            {
+                MessageBox.Show("Пустое!");
+                return;
+            }
+
+            NameLabel.Text = $"Имя: {pet.Name}";
+            GenderLabel.Text = $"Пол: {pet.Gender}";
+            TypeLabel.Text = $"Тип: {pet.Type}";
+            BirthDateTimePicker.Value = pet.DateOfBirth;
+            HealthprogressBar.Value = pet.Health;
+
+            CharacteristicsLabel.Text = "Особенности: ";
+            if (pet.Characteristics != null && pet.Characteristics.Count > 0)
+            {
+                CharacteristicsLabel.Text += string.Join(", ", pet.Characteristics);
+            }
+            else
+            {
+                CharacteristicsLabel.Text += "Нет";
+            }
+
+            try
+            {
+                if (File.Exists(pet.ImagePath))
+                {
+                    AnimalPictureBox.Image = Image.FromFile(pet.ImagePath);
+                }
+                else
+                {
+                    AnimalPictureBox.Image = null;
+                    MessageBox.Show("Изображение не найдено.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
+            }
+            
         }
     }
 }

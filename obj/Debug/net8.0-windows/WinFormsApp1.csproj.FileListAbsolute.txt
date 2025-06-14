@@ -15,3 +15,4 @@ C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\ne
 C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\C# ДЗ УНИВЕР\ФинальныйПроект\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
