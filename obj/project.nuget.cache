@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "W3aK6VbeC0s=",
+  "dgSpecHash": "ffFbDoCCwdU=",
   "success": true,
   "projectFilePath": "C:\\C# ДЗ УНИВЕР\\ФинальныйПроект\\WinFormsApp1\\WinFormsApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\0\\.nuget\\packages\\nlog\\5.5.0\\nlog.5.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

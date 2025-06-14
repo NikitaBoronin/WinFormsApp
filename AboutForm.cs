@@ -1,7 +1,11 @@
-﻿namespace WinFormsApp1
+﻿using NLog;
+
+namespace WinFormsApp1
 {
     public partial class AboutForm : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         public AboutForm()
         {
             InitializeComponent();
@@ -14,6 +18,7 @@
             List<Pet> pets = jsonSerialization.Read();
             if (pets == null || pets.Count == 0)
             {
+                logger.Error("Ошибка при чтении JSON");
                 MessageBox.Show("Нет сохранённых животных.");
                 return;
             }
@@ -75,12 +80,14 @@
                     }
                     else
                     {
+                        logger.Info("Изображение не найдено!");
                         AnimalPictureBox.Image = null;
                         MessageBox.Show("Изображение не найдено.");
                     }
                 }
                 catch (Exception ex)
                 {
+                    logger.Error("Ошибка при загрузки изображения.");
                     MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
                 }
             }
@@ -90,6 +97,7 @@
         {
             if(AnimalsDataGridView.SelectedRows == null)
             {
+                logger.Error("Ошибка при выборе.");
                 MessageBox.Show("Пустое!");
                 return;
             }
@@ -97,6 +105,7 @@
             var pet = AnimalsDataGridView.CurrentRow.DataBoundItem as Pet;
             if (pet == null )
             {
+                logger.Error("Ошибка при загрузки данных.");
                 MessageBox.Show("Пустое!");
                 return;
             }
@@ -121,16 +130,19 @@
             {
                 if (File.Exists(pet.ImagePath))
                 {
+                    logger.Info("Изображение найдено");
                     AnimalPictureBox.Image = Image.FromFile(pet.ImagePath);
                 }
                 else
                 {
+                    logger.Info("Изображение не найдено");
                     AnimalPictureBox.Image = null;
                     MessageBox.Show("Изображение не найдено.");
                 }
             }
             catch (Exception ex)
             {
+                logger.Error("Ошибка при чтении изображения.");
                 MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
             }
             

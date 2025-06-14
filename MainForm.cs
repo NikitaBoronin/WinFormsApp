@@ -1,8 +1,10 @@
+using NLog;
 
 namespace WinFormsApp1
 {
     public partial class MainForm : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         List<Pet> pets = new List<Pet>();
         public string ImagePath; 
 
@@ -36,12 +38,14 @@ namespace WinFormsApp1
 
             if (string.IsNullOrEmpty(enteredName) )
             {
+                logger.Error("Ошибка при загрузке вводе имени.");
                 MessageBox.Show("Вы не ввели имя!");
             }
 
             bool result = int.TryParse(HealthTextBox.Text, out int enteredAge);
             if (!result)
             {
+                logger.Error("Ошибка при загрузке вводе возраста.");
                 MessageBox.Show("Некорректный возраст!");
                 enteredAge = 1;
             }
@@ -72,6 +76,7 @@ namespace WinFormsApp1
 
             if (string.IsNullOrEmpty(selectedType))
             {
+                logger.Error("Ошибка при загрузке вводе типа.");
                 MessageBox.Show("Вы не выбрали тип животного!");
                 return;
             }
@@ -85,6 +90,7 @@ namespace WinFormsApp1
 
             if (!resultForHealth)
             {
+                logger.Error("Ошибка при загрузке вводе здоровья.");
                 MessageBox.Show("Некорректное здоровье!");
                 Health = 0;
             }
